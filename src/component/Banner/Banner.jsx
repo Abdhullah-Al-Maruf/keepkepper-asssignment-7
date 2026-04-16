@@ -1,4 +1,5 @@
 import { FaPlus } from "react-icons/fa";
+import Summarycard from "../ui/Summarycard";
 
 
 const Banner = () => {
@@ -10,6 +11,7 @@ const Banner = () => {
             <div className="flex justify-center">
                 <button className="flex items-center gap-3 px-6 py-3 rounded-xl font-semibold text-white transition-all duration-300 transform hover:-translate-y-0.5 hover:shadow-lg bg-gradient-to-br from-green-600 to-emerald-800 hover:from-green-500 hover:to-emerald-700 shadow-green-900/20"><FaPlus />Add a Friend</button>
             </div>
+            <Summarycard/>
         </div>
     );
 };
