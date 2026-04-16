@@ -3,6 +3,7 @@ import Rootlayout from "../layout/Rootlayout";
 import Hompepage from "../pages/Home/Hompepage";
 import Timeline from "../pages/TimeLine/Timeline";
 import Stats from "../pages/Stats/Stats";
+import NotFoundPage from "../pages/404/NotFoundPage";
 
 export const router = createBrowserRouter([
   {
@@ -21,7 +22,11 @@ export const router = createBrowserRouter([
         path: "/stats",
         Component: Stats
       }
+,  {
 
+    path:"*",
+    Component:NotFoundPage
+  }
     ]
   },
 ]);
