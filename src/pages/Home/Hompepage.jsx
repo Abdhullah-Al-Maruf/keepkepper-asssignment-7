@@ -1,6 +1,6 @@
-import React from 'react';
+
 import Banner from '../../component/Banner/Banner';
-import Navbar from '../../component/common/Navbar';
+
 
 const Hompepage = () => {
     return (
@@ -10,4 +10,4 @@ const Hompepage = () => {
     );
 };
 
-export default Hompepage; Hompepage
+export default Hompepage; 

@@ -3,7 +3,7 @@ import { FaPlus } from "react-icons/fa";
 
 const Banner = () => {
     return (
-        <div className="space-y-5 text-center">
+        <div className="space-y-5 text-center mt-10">
             <h1 className="text-3xl font-bold">Friends to keep close in your life</h1>
             <p className="text-neutral-500"> Your personal shelf of meaningful connections. Browse, tend, and nurture the <br />
                 relationships that matter most.</p>
