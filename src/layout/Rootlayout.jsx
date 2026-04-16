@@ -5,9 +5,11 @@ import Footer from '../component/common/Footer';
 
 const Rootlayout = () => {
     return (
-        <div>
+        <div     >
            <Navbar/>
+           <div className='container mx-auto'>
            <Outlet/>
+           </div>
            <Footer/>
          
         </div>
