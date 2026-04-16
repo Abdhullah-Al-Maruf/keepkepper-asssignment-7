@@ -2,7 +2,7 @@ import React from 'react';
 
 const Summarycard = () => {
     return (
-        <div className=' grid w-[90%] mx-auto md:grid-cols-2 lg:grid-cols-4  gap-5 '>
+        <div className=' mt-10 mb-10 grid   w-[80%] mx-auto md:grid-cols-2 lg:grid-cols-4  gap-5  container mx-auto'>
             <div className='shadow border border-gray-200  p-4 rounded-md'>
                 <h1 className='text-green-900 font-bold text-2xl'>10</h1>
                 <p className='text-gray-500'>Total Friends</p>
