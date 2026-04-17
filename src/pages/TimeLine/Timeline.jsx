@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { HistoryContext } from '../../context/timelineContext';
+import { HistoryContext } from '../../context/TimelineContext';
 
 const Timeline = () => {
     const { personData } = useContext(HistoryContext);

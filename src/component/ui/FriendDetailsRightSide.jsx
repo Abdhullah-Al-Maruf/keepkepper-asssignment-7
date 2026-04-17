@@ -3,7 +3,7 @@ import { useContext } from "react";
 import { BsFillTelephoneOutboundFill } from "react-icons/bs";
 import { FiPhoneCall } from "react-icons/fi";
 import { MdOutlineTextsms, MdOutlineVideocam } from "react-icons/md";
-import { HistoryContext } from "../../context/timelineContext";
+import { HistoryContext } from "../../context/TimelineContext";
 
 
 const FriendDetailsRightSide = ({ friendData }) => {
