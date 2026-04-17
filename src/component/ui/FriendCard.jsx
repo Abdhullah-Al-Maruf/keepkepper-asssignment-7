@@ -17,7 +17,7 @@ const FriendCard = ({ friend }) => {
           <p className='text-2xl font-semibold'>{days_since_contact}d ago</p>
           <div className="card-actions">
             {
-              tags.map(tag => <div className="badge font-semibold badge-soft badge-success">{tag}</div>)
+              tags.map((tag,ind) => <div key={ind} className="badge font-semibold badge-soft badge-success">{tag}</div>)
             }
           </div>
           <div className={`badge  p-4 text-white font-bold ${status === "overdue" ? " bg-red-500" :

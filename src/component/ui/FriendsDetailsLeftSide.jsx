@@ -30,7 +30,7 @@ const FriendsDetailsLeftSide = ({ friendData }) => {
                     </div>
                     <div className="card-actions">
                         {
-                            tags.map(tag => <div className="badge font-semibold text-white p-3
+                            tags.map((tag ,ind) => <div key={ind} className="badge font-semibold text-white p-3
                                  bg-green-500">{tag}</div>)
                         }
                     </div>

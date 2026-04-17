@@ -1,14 +1,19 @@
+
+import { useContext } from "react";
 import { BsFillTelephoneOutboundFill } from "react-icons/bs";
 import { FiPhoneCall } from "react-icons/fi";
 import { MdOutlineTextsms, MdOutlineVideocam } from "react-icons/md";
+import { HistoryContext } from "../../context/timelineContext";
 
 
 const FriendDetailsRightSide = ({ friendData }) => {
-    const {
+    const { 
         days_since_contact,
         goal,
         next_due_date
     } = friendData;
+const {handleClick}=useContext(HistoryContext)
+
     return (
         <div>
             <div className=" grid gap-4 lg:grid-cols-3">
@@ -34,10 +39,16 @@ const FriendDetailsRightSide = ({ friendData }) => {
 
             <div className="mt-5  rounded-md border border-gray-200 mb-10 shadow p-5">
                 <h1 className="mb-2 text-green-700 font-bold">Quick Check-In</h1>
-                <div className=" flex flex-col md:flex-row p-4 gap-6">
-                    <span className=" btn bg-base-200  shadow px-15 rounded-md py-5 cursor-pointer" ><FiPhoneCall />Call</span>
-                    <span className=" btn bg-base-200  shadow px-15 rounded-md py-5 cursor-pointer"><MdOutlineTextsms />Text</span>
-                    <span className="btn bg-base-200  shadow px-15 rounded-md py-5 cursor-pointer"><MdOutlineVideocam />Video </span>
+                <div className=" grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <button 
+                    onClick={()=>handleClick(friendData,"Call")}
+                    className=" btn bg-base-200  shadow px-15 rounded-md py-5 cursor-pointer" ><FiPhoneCall/> Call</button>
+                    <button  
+                         onClick={()=>handleClick(friendData,"Text")}
+                    className=" btn bg-base-200  shadow px-15 rounded-md py-5 cursor-pointer"><MdOutlineTextsms />Text</button>
+                    <button 
+                         onClick={()=>handleClick(friendData,"Video")}
+                    className="btn bg-base-200  shadow px-15 rounded-md py-5 cursor-pointer"><MdOutlineVideocam />Video </button>
                 </div>
 
             </div>
