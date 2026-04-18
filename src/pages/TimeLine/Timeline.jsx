@@ -22,7 +22,7 @@ const Timeline = () => {
                     <h2 className='text-2xl font-bold mt-5 mb-5'>TimeLine</h2>
                     {/* filter ui */}
                     <button
-                        className="btn mb-4"
+                        className="btn mb-4 text-gray-500"
                         popoverTarget="popover-filter"
                         style={{ anchorName: "--anchor-filter" }}
                     >

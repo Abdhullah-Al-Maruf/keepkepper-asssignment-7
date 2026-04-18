@@ -1,14 +1,15 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 const Emptytimeline = () => {
     return (
         <div>
         <div className="flex flex-col items-center justify-center p-8 bg-white rounded-2xl shadow-sm border border-gray-100 h-100 container mx-auto">
   {/* Icon Container */}
-  <div className="bg-blue-50 p-4 rounded-full mb-4">
+  <div className="bg-green-50 p-4 rounded-full mb-4">
     <svg 
       xmlns="http://www.w3.org/2000/svg" 
-      className="h-10 w-10 text-blue-500" 
+      className="h-10 w-10 text-green-500" 
       fill="none" 
       viewBox="0 0 24 24" 
       stroke="currentColor"
@@ -31,9 +32,15 @@ const Emptytimeline = () => {
   </p>
 
   {/* Optional CTA Button */}
-  <button className="px-6 py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors duration-200 shadow-md hover:shadow-lg">
+  
+  
+  <Link to='/'>
+    <button 
+  className="px-6 py-2 bg-green-600 hover:bg-green-200 text-white font-medium rounded-lg transition-colors duration-200 shadow-md hover:shadow-lg">
     Find Friends
   </button>
+  </Link>
+
 </div> 
         </div>
     );
