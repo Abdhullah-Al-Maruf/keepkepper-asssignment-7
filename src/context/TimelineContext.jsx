@@ -7,26 +7,20 @@ export const HistoryContext = createContext();
 const TimelineContext = ({ children }) => {
     const [personData, setPersonData] = useState([]);
 
-    const handleClick = (friendData,type) => {
+    const handleClick = (friendData, type) => {
         // toast messages
-          const messages = {
-        Text: "Text message sent 📩",
-        Call: "Audio message sent 🎧",
-        Video: "Video message sent 🎥"
+        const messages = {
+            Text: "Text message sent 📩",
+            Call: "Audio message sent 🎧",
+            Video: "Video message sent 🎥"
+        };
+        toast.success(messages[type]);
+
+        //  state updatation
+        setPersonData(prev => [...prev, { friendData, type } ]);
+
+
     };
- toast.success(messages[type]);
-
-//  state updatation
-    setPersonData(prev => [
-        ...prev,
-        {
-            friendData,
-            type,
-        }
-    ]);
-
-   
-};
 
     const globalData = {
         handleClick,
