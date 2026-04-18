@@ -6,7 +6,7 @@ A smart and simple friendship tracking app that helps you stay connected with yo
 
 ## 🚀 Live Project
 
-🔗 **Live Site: "  i will update it later "
+🔗 **Live Site: https://kin-kepper.vercel.app/
 
 ---
 
